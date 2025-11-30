@@ -119,8 +119,8 @@ class DashboardWindow(QMainWindow):
         top_bar.addStretch()
         self.layout.addLayout(top_bar)
 
-        # Form Area
-        form_group = QGroupBox("Report an Item")
+# Form Area
+        form_group = QGroupBox() 
         main_form_layout = QHBoxLayout()
         
         # -- Left Side: Text Inputs --
