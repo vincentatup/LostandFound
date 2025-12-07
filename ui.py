@@ -127,7 +127,7 @@ class DashboardWindow(QMainWindow):
         input_layout = QFormLayout()
         
         self.status_input = QComboBox()
-        self.status_input.addItems(["Lost", "Found"]) # Removed "Returned" here
+        self.status_input.addItems(["Lost", "Found"])
         
         self.name_input = QLineEdit()
         self.name_input.setPlaceholderText("e.g., Black iPhone 12, Golden Retriever")
@@ -240,7 +240,7 @@ class DashboardWindow(QMainWindow):
             elif status_text == "Found":
                 status_item.setForeground(Qt.GlobalColor.darkGreen)
             elif status_text == "Returned":
-                status_item.setForeground(Qt.GlobalColor.gray) # Gray for resolved items
+                status_item.setForeground(Qt.GlobalColor.gray)
 
             self.table.setItem(row_idx, 0, QTableWidgetItem(str(row_data[0])))
             self.table.setItem(row_idx, 1, status_item)
@@ -335,7 +335,7 @@ class DashboardWindow(QMainWindow):
                 item_id, 
                 self.name_input.text(), 
                 self.desc_input.toPlainText(), 
-                "Returned",  # Force status to Returned
+                "Returned",  
                 self.contact_input.text(),
                 self.current_image_path
             )

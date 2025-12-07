@@ -6,7 +6,7 @@ from ui import LoginDialog, DashboardWindow
 def main():
     app = QApplication(sys.argv)
     
-    # Initialize Database (creates 'lost_and_found.db' now)
+    # Initialize Database (creates 'lost_and_found.db')
     db = Database()
     
     login = LoginDialog(db)
